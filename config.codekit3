@@ -2518,14 +2518,33 @@
       "oAP" : "\/js\/bootstrap.min.js.map",
       "oF" : 0
     },
+    "\/js\/common-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/common-min-min.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
+    "\/js\/common-min.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/js\/common-min.js.map",
+      "oF" : 0
+    },
     "\/js\/common.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 1,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/js\/common.min.js",
-      "oF" : 2,
+      "oAP" : "\/js\/common-min.js",
+      "oF" : 0,
       "sC" : 1,
       "tS" : 0
     },
@@ -2551,11 +2570,11 @@
     "\/js\/photoswipe-init.js" : {
       "bF" : 0,
       "ft" : 64,
-      "ma" : 1,
+      "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/js\/photoswipe.ini.min.js",
-      "oF" : 2,
+      "oAP" : "\/js\/photoswipe-init-min.js",
+      "oF" : 0,
       "sC" : 1,
       "tS" : 0
     },
@@ -2578,28 +2597,28 @@
       "oAP" : "\/js\/photoswipe.ini.min.js.map",
       "oF" : 0
     },
-    "\/lib\/footer.php" : {
+    "\/lib\/head.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/lib\/footer.php",
+      "oAP" : "\/lib\/head.php",
       "oF" : 0
     },
-    "\/lib\/header.php" : {
+    "\/lib\/site-footer.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/lib\/header.php",
+      "oAP" : "\/lib\/site-footer.php",
       "oF" : 0
     },
-    "\/lib\/nav.php" : {
+    "\/lib\/site-header.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/lib\/nav.php",
+      "oAP" : "\/lib\/site-header.php",
       "oF" : 0
     },
     "\/LICENSE" : {
@@ -2689,14 +2708,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/util\/genesis-setup.php",
-      "oF" : 0
-    },
-    "\/util\/head.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/util\/head.php",
       "oF" : 0
     },
     "\/util\/image-sizes.php" : {

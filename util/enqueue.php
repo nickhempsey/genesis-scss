@@ -6,58 +6,75 @@ $version = wp_get_theme()->Version;
 wp_register_script(
     'bsg_popper_js',
     'https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js',
-    array( 'jquery' ), '1.0.0', false);
+    array( 'jquery' ), '1.0.0', false
+);
 
 
 wp_register_script(
     'bsg_bootstrap_js',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js',
     //get_stylesheet_directory_uri() . '/js/bootstrap.min.js',
-    array( 'jquery' ), '1.0.0', false );
+    array( 'jquery' ), '1.0.0', false 
+);
 
 
 //  Fonts
 wp_register_style(
     'bsg-typekit-fonts',
-    'https://use.typekit.net/bcj4ekv.css');
+    'https://use.typekit.net/bcj4ekv.css'
+);
 
 
-// Animate On Scroll
+// Animate On Scroll - https://github.com/michalsnik/aos
 wp_register_script(
 	'bsg_aos_js',
 	'https://unpkg.com/aos@2.3.1/dist/aos.js',
-	array( 'jquery' ), '1.0.0', false );
+	array( 'jquery' ), '1.0.0', false 
+);
+
 
 wp_register_style(
 	'bsg_aos_css',
 	'https://unpkg.com/aos@2.3.1/dist/aos.css',
-	array(), $version );
+	array(), $version
+);
 
+
+// Parallax - https://github.com/pixelcog/parallax.js/
+wp_register_script(
+	'bsg_parallax_js',
+	'https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js',
+	array( 'jquery' ), '1.0.0', false 
+);
 
 	
 // Theme assets
 wp_register_style(
     'bsg_bootstrap_css',
     get_stylesheet_directory_uri() . '/css/bootstrap/bootstrap.min.css',
-    array(), $version );
+    array(), $version 
+);
 
 
 wp_register_style(
     'bsg_combined_css',
     get_stylesheet_directory_uri() . '/css/style.min.css',
-    array(), $version );
+    array(), $version 
+);
 
 
 wp_register_script(
     'bsg_combined_js',
     get_stylesheet_directory_uri() . '/js/common.min.js',
     array('jquery', 'bsg_bootstrap_js',),
-    $version, false );
+    $version, false 
+);
 
 wp_register_style(
     'bsg_admin_css',
     get_stylesheet_directory_uri().'/css/admin.min.css',
-    array(), $version);
+    array(), $version
+);
 
 
 remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
@@ -92,9 +109,12 @@ function bsg_enqueue_css_js() {
     if(!is_admin()) {
 
 
-		// Bootstrap JS
+		// AOS
 		wp_enqueue_style( 'bsg_aos_js');
 		wp_enqueue_script( 'bsg_aos_css');
+
+		// Parallax
+		wp_enqueue_script( 'bsg_parallax_css');
 
 		// Bootstrap JS
 		wp_enqueue_script( 'bsg_popper_js');
