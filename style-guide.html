@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IngredientSAFE Site Guide</title>
+        <link href="https://use.typekit.net/bcj4ekv.css" rel="stylesheet">
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c4b7a60a1d.js" crossorigin="anonymous"></script>
+        <style>
+        /* Style guide stuff only, doesn't need to be in theme */
+        .bd-sidebar ul {
+            display: block;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .bd-sidebar li {
+            display: block;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .bd-sidebar li > a {
+          display: block;
+          padding: .25rem 1.5rem;
+          @include font-size(90%);
+          color: rgba(0, 0, 0, .65);
+        }
+
+        .bd-sidebar li > a:hover {
+          color: rgba(0, 0, 0, .85);
+          text-decoration: none;
+          background-color: transparent;
+        }
+
+        .bd-sidebar .active > a,
+        .bd-sidebar .active:hover > a {
+          font-weight: 600;
+          color: rgba(0, 0, 0, .85);
+          background-color: transparent;
+        }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">IngredientSAFE Site Guide</a>
+        </nav>
+
+        <main class="">
+            <div class="row flex-xl-nowrap">
+                <div class="col-md-3 col-xl-2 bd-sidebar">
+
+                    <ul class="bd-sidenav">
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#icons">Icons</a></li>
+                        <li><a href="#alerts">Alerts</a></li>
+                        <li><a href="#badges">Badges</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#cards">Cards</a></li>
+                        <li><a href="#collapse">Collapse</a></li>
+                        <li><a href="#figure">Figure</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#listGroup">List Group</a></li>
+                        <li><a href="#spinners">Spinners</a></li>
+                        <li><a href="#table">Table</a></li>
+                        <li><a href="#toasts">Toasts</a></li>
+                        <li><a href="#tooltips">Tooltips</a></li>
+                        <li><a href="#colors">Colors</a></li>
+                        <li><a href="#backgrounds">Backgrounds</a></li>
+                        <li><a href="#gradientsHorizontal">Gradient Horizontal</a></li>
+                        <li><a href="#gradientsVertical">Gradient Vertical</a></li>
+                        <li><a href="#flourish">Flourish</a></li>
+                        <li><a href="#shadows">Shadows</a></li>
+                    </ul>
+
+                </div> <!-- end .bd-sidebar -->
+
+                <div class="col-md-9 col-xl-10 py-md-4 pl-md-5 bd-content border-left">
+                    <div class="pr-md-5 bd-content-wrap">
+                        <div class="pb-5 mb-5 border-bottom" id="intro">
+                            <img src="images/logo-black.png" alt="IngredientSAFE" style="max-width:400px;">
+                            <p class="mt-3">IngredientSAFE will be using Bootstrap v4.5 with augmentations to color scheme, fonts, and several other pieces to make it come into line with the brand.</p>
+                            <p>For more information on <a href="https://getbootstrap.com/" target="_blank">Bootstrap v4.5</a></p>
+
+                            <p>In addition, we will be using:</p>
+                            <ul>
+                                <li><a href="https://fontawesome.com/icons?d=gallery" target="_blank">FontAwesome</a> for icons</li>
+                                <li><a href="https://swiperjs.com/" target="_blank">Swiper</a> for carousels</li>
+                                <li><a href="https://photoswipe.com/" target="_blank">Photoswipe</a> for image gallery overlays</li>
+                                <li><a href="https://gravityforms.com/" target="_blank">GravityForms</a> for Forms</li>
+                            </ul>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="typography">
+                            <h2 class="display-4 mb-5">Typography</h2>
+                            <h1>h1. IngredientSAFE heading</h1>
+                            <h2>h2. IngredientSAFE heading</h2>
+                            <h3>h3. IngredientSAFE heading</h3>
+                            <h4>h4. IngredientSAFE heading</h4>
+                            <h5>h5. IngredientSAFE heading</h5>
+                            <h6>h6. IngredientSAFE heading</h6>
+
+                            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                            <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                            <p><u>This line of text will render as underlined</u></p>
+                            <p><small>This line of text is meant to be treated as fine print.</small></p>
+                            <p><strong>This line rendered as bold text.</strong></p>
+                            <p><em>This line rendered as italicized text.</em></p>
+                            <p class="lead">Lead. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+
+                            <p>This line has an <abbr title="attribute">attr</abbr> included in it.</p>
+                            <p>This line contains an abbreviation for <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>.</p>
+
+                            <blockquote class="blockquote text-center">
+                                <h3>Blockquotes are a fun choice</h3>
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+
+                            <div class="row my-5">
+                                <div class="col-12 col-md-6">
+                                    <h3 >Unordered List</h3>
+                                    <ul class="">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>Nulla volutpat aliquam velit
+                                            <ul>
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                                <li>Ac tristique libero volutpat at</li>
+                                            </ul>
+                                        </li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <h3>Ordered List</h3>
+                                    <ol class="">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                        <li>Nulla volutpat aliquam velit
+                                            <ol>
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                                <li>Ac tristique libero volutpat at</li>
+                                            </ol>
+                                        </li>
+                                        <li>Faucibus porta lacus fringilla vel</li>
+                                        <li>Aenean sit amet erat nunc</li>
+                                        <li>Eget porttitor lorem</li>
+                                    </ol>
+                              </div>
+                          </div>
+
+                            <dl class="row">
+                              <dt class="col-sm-3">Description lists</dt>
+                              <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+                              <dt class="col-sm-3">Euismod</dt>
+                              <dd class="col-sm-9">
+                                <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                                <p>Donec id elit non mi porta gravida at eget metus.</p>
+                              </dd>
+
+                              <dt class="col-sm-3">Malesuada porta</dt>
+                              <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                              <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                              <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+                              <dt class="col-sm-3">Nesting</dt>
+                              <dd class="col-sm-9">
+                                <dl class="row">
+                                  <dt class="col-sm-4">Nested definition list item 1</dt>
+                                  <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                  <dt class="col-sm-4">Nested definition list item 2</dt>
+                                  <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                  <dt class="col-sm-4">Nested definition list item 3</dt>
+                                  <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                  <dt class="col-sm-4">Nested definition list item 4</dt>
+                                  <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                </dl>
+                              </dd>
+                            </dl>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="icons">
+                            <h2 class="display-4 mb-5">Icons</h2>
+                            <p>We will be using the FontAwesome DuoTone icons for the majority of the site, there will be situations where we opt to use a light or solid.</p>
+
+                            <p><a href="https://fontawesome.com/icons?d=gallery" target="_blank" class="btn btn-primary">Full icon list here</a></p>
+
+                            <h3>Doutone</h3>
+                            <div class="row">
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-primary">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-primary">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-primary">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Secondary -->
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-secondary">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-secondary">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-secondary">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dark -->
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-dark">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-dark">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-dark">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cyan -->
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-cyan">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-cyan">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-cyan">
+                                        <div class="card-body text-center">
+                                            <i class="fad fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <h3>Light</h3>
+                            <div class="row">
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-primary">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-primary">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-primary">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Secondary -->
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-secondary">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-secondary">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-secondary">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dark -->
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-dark">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-dark">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-dark">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cyan -->
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-cyan">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-cyan">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-cyan">
+                                        <div class="card-body text-center">
+                                            <i class="fal fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <h3>Solid</h3>
+                            <div class="row">
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-primary">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-primary">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-primary">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Secondary -->
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-secondary">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-secondary">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-secondary">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dark -->
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-dark">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-dark">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-dark">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cyan -->
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-cyan">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-tachometer-alt-fastest"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-cyan">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                                    <div class="card text-cyan">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-3x fa-handshake-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="alerts">
+                            <h2 class="display-4 mb-5">Alerts</h2>
+                            <div class="alert alert-primary" role="alert">A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
+                            <div class="alert alert-secondary" role="alert">A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
+                            <div class="alert alert-success" role="alert">A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
+                            <div class="alert alert-danger" role="alert">A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
+                            <div class="alert alert-warning" role="alert">A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
+                            <div class="alert alert-info" role="alert">A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
+                            <div class="alert alert-light" role="alert">A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
+                            <div class="alert alert-dark" role="alert">A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</div>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="badges">
+                            <h2 class="display-4 mb-5">Badges</h2>
+                            <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+                            <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                            <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                            <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+                            <button type="button" class="btn btn-primary"> Notifications <span class="badge badge-light">4</span></button>
+
+                            <span class="badge badge-pill badge-primary">Primary</span> <span class="badge badge-pill badge-secondary">Secondary</span> <span class="badge badge-pill badge-success">Success</span> <span class="badge badge-pill badge-danger">Danger</span> <span class="badge badge-pill badge-warning">Warning</span> <span class="badge badge-pill badge-info">Info</span> <span class="badge badge-pill badge-light">Light</span> <span class="badge badge-pill badge-dark">Dark</span>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="buttons">
+                            <h2 class="display-4 mb-5">Buttons</h2>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+                            <button type="button" class="btn btn-link">Link</button>
+
+                            <h2 class="mt-4">Outline Buttons</h2>
+                            <button type="button" class="btn btn-outline-primary">Primary</button>
+                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                            <button type="button" class="btn btn-outline-success">Success</button>
+                            <button type="button" class="btn btn-outline-danger">Danger</button>
+                            <button type="button" class="btn btn-outline-warning">Warning</button>
+                            <button type="button" class="btn btn-outline-info">Info</button>
+                            <button type="button" class="btn btn-outline-light">Light</button>
+                            <button type="button" class="btn btn-outline-dark">Dark</button>
+
+                            <h2 class="mt-4">Button Sizes</h2>
+                            <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+                            <button type="button" class="btn btn-primary">Default Button</button>
+                            <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+                            <button type="button" class="btn btn-primary btn-block btn-lg mt-3">Block Button (also large)</button>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="cards">
+                            <h2 class="display-4 mb-5">Cards</h2>
+                            <div class="card" style="width:300px;">
+                              <div class="card-header">
+                                Featured
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="collapse">
+                            <h2 class="display-4 mb-5">Collapse</h2>
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1</button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2</button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="dropdown">
+                            <h2 class="display-4 mb-5">Dropdown</h2>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="figure">
+                            <h2 class="display-4 mb-5">Figure</h2>
+                            <figure class="figure">
+                              <img src="https://placebeard.it/640x360" class="figure-img img-fluid rounded" alt="...">
+                              <figcaption class="figure-caption">A caption for the above image. That image is a randomized beard...</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="forms">
+
+                            <h2 class="display-4 mb-5">Forms</h2>
+                            <form style="max-width: 700px;">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+
+                            <form>
+                              <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                              </div>
+
+                              <div class="form-group">
+                                <label for="exampleFormControlSelect1">Example select</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="exampleFormControlSelect2">Example multiple select</label>
+                                <select multiple class="form-control" id="exampleFormControlSelect2">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+
+                            <div class="form-group">
+                                <h2 class="mt-4">Input Sizes</h2>
+                                <input class="form-control form-control-lg mb-3" type="text" placeholder="Large .form-control-lg">
+                                <input class="form-control mb-3" type="text" placeholder="Default input">
+                                <input class="form-control form-control-sm" type="text" placeholder="Small .form-control-sm">
+                            </div>
+
+
+                            <h2 class="mt-4">Input Groups</h2>
+                            <div class="input-group mb-3"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1">@</span></div><input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></div>
+
+                            <div class="input-group mb-3"><input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"><div class="input-group-append"><span class="input-group-text" id="basic-addon2">@example.com</span></div></div>
+
+                            <label for="basic-url">Your vanity URL</label>
+                            <div class="input-group mb-3"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon3">https://example.com/users/</span></div><input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"></div>
+
+                            <div class="input-group mb-3"><div class="input-group-prepend"><span class="input-group-text">$</span></div><input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"><div class="input-group-append"><span class="input-group-text">.00</span></div></div>
+
+                            <div class="input-group"><div class="input-group-prepend"><span class="input-group-text">With textarea</span></div><textarea class="form-control" aria-label="With textarea"></textarea></div>
+                            </form>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="listGroup">
+                            <h2 class="display-4 mb-5">List Group</h2>
+                            <ul class="list-group">
+                              <li class="list-group-item active">Cras justo odio</li>
+                              <li class="list-group-item disabled">Dapibus ac facilisis in</li>
+                              <li class="list-group-item">Morbi leo risus</li>
+                              <li class="list-group-item">Porta ac consectetur ac</li>
+                              <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="spinners">
+                            <h2 class="display-4 mb-5">Spinners</h2>
+                            <div class="spinner-border text-primary mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-border text-secondary mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-border text-success mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-border text-danger mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-border text-warning mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-border text-info mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-border text-light mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-border text-dark " role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+
+                            <div class="clearfix mt-5"></div>
+
+                            <div class="spinner-grow text-primary mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-secondary mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-success mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-danger mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-warning mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-info mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-light mr-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-dark" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="table">
+                            <h2 class="display-4 mb-5">Table</h2>
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="toasts">
+                            <h2 class="display-4 mb-5">Toasts</h2>
+                            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1;">
+                              <div class="toast-header">
+                                <img src="https://placebeard.it/20x20" class="rounded mr-2" alt="...">
+                                <strong class="mr-auto">This is a toast</strong>
+                                <small>11 mins ago</small>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              </div>
+                              <div class="toast-body">
+                                Hello, world! This is a toast message.
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="tooltips">
+                            <h2 class="display-4 mb-5">Tooltips<h2>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button> <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button> <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button> <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="colors">
+                            <h2 class="display-4 mb-5">Colors</h2>
+                            <p class="text-primary">.text-primary</p>
+                            <p class="text-secondary">.text-secondary</p>
+                            <p class="text-success">.text-success</p>
+                            <p class="text-danger">.text-danger</p>
+                            <p class="text-warning">.text-warning</p>
+                            <p class="text-info">.text-info</p>
+                            <p class="text-light bg-dark">.text-light</p>
+                            <p class="text-dark">.text-dark</p>
+                            <p class="text-body">.text-body</p>
+                            <p class="text-muted">.text-muted</p>
+                            <p class="text-white bg-dark">.text-white</p>
+                            <p class="text-black-50">.text-black-50</p>
+                            <p class="text-white-50 bg-dark">.text-white-50</p>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="backgrounds">
+                            <h2 class="display-4 mb-5">Backgrounds</h2>
+                            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                            <div class="p-3 mb-2 bg-cyan text-dark">.bg-cyan</div>
+                            <div class="p-3 mb-2 bg-light-cyan text-dark">.bg-light-cyan</div>
+                            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                            <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+                            <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                            <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="gradientsHorizontal">
+                            <h2 class="display-4 mb-5">Gradients - "Horizontal"</h2>
+                            <div class="p-5 mb-2 bg-gradient-primary text-white">
+                                <div class="p-5">
+                                    .bg-gradient-primary
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-secondary text-white">
+                                <div class="p-5">
+                                    .bg-gradient-secondary
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-cyan text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-cyan
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-light-cyan text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-light-cyan
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-success text-white">
+                                <div class="p-5">
+                                    .bg-gradient-success
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-danger text-white">
+                                <div class="p-5">
+                                    .bg-gradient-danger
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-warning text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-warning
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-info text-white">
+                                <div class="p-5">
+                                    .bg-gradient-info
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-light text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-light
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-dark text-white">
+                                <div class="p-5">
+                                    .bg-gradient-dark
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="gradientsVertical">
+                            <h2 class="display-4 mb-5">Gradients - Vertical Fade to White</h2>
+                            <p>These variants are meant to serve as transitionals. The main use case being .bg-gradient-vertical-light-cyan in main content areas.</p>
+                            <div class="p-5 mb-2 bg-gradient-vertical-primary text-white">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-primary
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-vertical-secondary text-white">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-secondary
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-vertical-cyan text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-cyan
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-vertical-light-cyan text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-light-cyan
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-vertical-success text-white">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-success
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-vertical-danger text-white">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-danger
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-vertical-warning text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-warning
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-vertical-info text-white">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-info
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-vertical-light text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-light
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-vertical-dark text-white">
+                                <div class="p-5">
+                                    .bg-gradient-vertical-dark
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="flourish">
+                            <h2 class="display-4 mb-5">Background Flourish</h2>
+                            <p>The flourish can be added to any background color to add texture.</p>
+                            <div class="p-5 mb-2 bg-gradient-primary bg-flourish text-white">
+                                <div class="p-5">
+                                    .bg-gradient-primary .bg-flourish
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-secondary bg-flourish text-white">
+                                <div class="p-5">
+                                    .bg-secondary .bg-flourish
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-cyan bg-flourish text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-cyan .bg-flourish
+                                </div>
+                            </div>
+
+                            <div class="p-5 mb-2 bg-success bg-flourish text-white">
+                                <div class="p-5">
+                                    .bg-success .bg-flourish
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-danger bg-flourish text-white">
+                                <div class="p-5">
+                                    .bg-gradient-danger .bg-flourish
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-warning bg-flourish text-dark">
+                                <div class="p-5">
+                                    .bg-gradient-warning .bg-flourish
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-info bg-flourish text-white">
+                                <div class="p-5">
+                                    .bg-info .bg-flourish
+                                </div>
+                            </div>
+                            <div class="p-5 mb-2 bg-gradient-dark bg-flourish text-white">
+                                <div class="p-5">
+                                    .bg-gradient-dark
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-5 mb-5 border-bottom" id="shadows">
+                            <h2 class="display-4 mb-5">Shadows</h2>
+                            <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+                            <div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+                            <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+                            <div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+                        </div>
+                    </div><!-- end .bd-content-wrap -->
+                </div><!-- end .bd-content -->
+            </div><!-- end .row -->
+        </main>
+    </body>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            setTimeout(function() {
+              $("body").addClass("loaded");
+            }, 500);
+
+            if($('[data-toggle="tooltip"]').length !== 0) {
+                $('[data-toggle="tooltip"]').tooltip();
+            }
+
+            if($('.toast').length !== 0) {
+                $('.toast').toast();
+            }
+
+        });
+    </script>
+</html>

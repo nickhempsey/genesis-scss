@@ -1,0 +1,251 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    background: #EEEEEE;
+
+    @include prefers-scheme(dark) {
+	    background: #252525;
+    }
+
+}
+
+.overflow-x-hidden {
+	overflow-x: hidden !important;
+}
+
+
+html.wrighttechnologies,
+html.wrighttechnologies body {
+	padding: 0px !important;
+	margin: 0px !important;
+	scroll-behavior: smooth;
+}
+
+
+// WP Admin Bar
+html.wrighttechnologies #wpadminbar {
+	top: auto;
+	bottom: 0;
+	.menupop .ab-sub-wrapper,
+    .shortlink-input {
+		bottom: 32px;
+	}
+	body.admin-bar {
+		margin-bottom:32px;
+	}
+}
+
+.container-small {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.post-edit-link {
+	position: fixed;
+	bottom: 64px;
+	left: 32px;
+	z-index: 1000;
+	background: $primary;
+	color: white;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	line-height: 60px;
+	display: block;
+	border-radius: 100px;
+	text-decoration: none;
+	opacity: .5;
+	text-transform: uppercase;
+	&:hover {
+		opacity: 1;
+		color: white;
+	}
+
+}
+
+
+/**
+    *
+    *
+    * Home Hero Slider Fixes
+    *
+    *
+**/
+// fixes an issue that wasn't letting negative margins work below the CTA.
+div#n2-ss-4 {
+    float: none !important;
+}
+
+
+
+/** 
+    Gutenberg Column Fix
+**/
+
+@media (min-width: 600px) and (max-width: 781px) {
+    .wp-block-column:not(:only-child) {
+        flex-basis: 50% !important;
+        flex-grow: 0;
+    }
+}
+
+.wp-block-columns {
+    margin-bottom: 0;
+}
+
+
+/***
+	History Map
+***/
+
+.history-map {
+	position: relative;
+ 
+	&-info {
+	    position: absolute;
+	    top: .25rem;
+	    right: .25rem;
+	    width: 1.2rem;
+	    height: 1.2rem;
+	    line-height: 1.2rem;
+	    
+	    color: white;
+	    background: blue;
+ 
+	    text-align: center;
+	    font-size: .8rem;
+	    font-weight: bold;
+	    font-style: italic;
+	    border-radius: 100px;
+	    cursor: pointer;
+	}
+ 
+	&-number {
+	    position:absolute;
+	    left: 50%;
+	    margin-left: -25px;
+	    bottom: -40px;
+ 
+	    width: 50px;
+	    height: 50px;
+	    line-height: 50px;
+	    
+	    background: $secondary;
+	    color: white;
+	    font-size: 1.5rem;
+	    text-align: center;
+	    border-radius: 100px;
+	    z-index: 100;
+ 
+	    &:after {
+		   content: "";
+		   position: absolute;
+		   width: 125px;
+		   height: 8px;
+		   top: 50%;
+		   left: 100%;
+		   margin-top: -4px;
+		   background: #5d8cc6;
+	    }
+	}
+	
+	&-content {
+		margin-top: 1rem;
+		font-size: .9rem;
+	}
+	
+	
+	.swiper-container {
+	    width: 100%;
+	}
+ 
+	.swiper-slide {
+	    background: #fff;
+	    margin-left: -100px;
+	    width: 250px;
+	    height: 160px;
+	    padding: 1rem;
+	    position: relative;
+	    overflow: visible;
+	    z-index: 10;
+	}
+ 
+	.swiper-slide:first-child {
+	    margin-left: 0;
+	    .history-map-number {
+		   &:before {
+			  content: "";
+			  position: absolute;
+			  width: 35px;
+			  height: 8px;
+			  top: 50%;
+			  right: 100%;
+			  margin-top: -4px;
+			  background: #5d8cc6;
+			  border-bottom-left-radius: 10px;
+			  border-top-left-radius: 10px;
+		   }
+	    }
+	}
+	.swiper-slide:nth-child(even) {
+	    margin-top: 190px;
+ 
+	    .history-map-number {
+		   bottom: auto;
+		   top: -40px;
+	    }
+	}
+ 
+	.swiper-slide:last-child .history-map-number:after {
+	    width: 35px;
+	    border-bottom-right-radius: 10px;
+	    border-top-right-radius: 10px;
+	}
+ 
+	.swiper-navigation {
+	    font-size: 1.5rem;
+	    
+	    > span {
+		   appearance: none;
+		   &:focus, &.active, &:hover {
+			opacity: .5;
+		   }
+		   &.swiper-button-disabled {
+			  opacity: .5;
+		   }
+	    }
+	    
+ 
+	}
+
+ }
+
+
+.post-navigation {
+	&-link {
+		opacity: .6;
+		&:focus, &.active, &:hover {
+			opacity: 1;
+		}
+		span {
+			display: block;
+		}
+		a {
+			color: $body-color;
+			font-size: $font-size-lg;
+			&:focus, &.active, &:hover {
+				text-decoration: none;		
+			}
+		}
+	}
+
+	.next-link {
+		text-align: right;
+	}
+}

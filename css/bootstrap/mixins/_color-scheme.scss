@@ -1,0 +1,12 @@
+
+@mixin prefers-scheme( $scheme ) {
+
+	@if( $scheme == 'light' or $scheme == 'dark') {
+		
+		@media (prefers-color-scheme: $scheme) {
+			
+			@content;
+
+		}
+	}
+}

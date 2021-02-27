@@ -1,0 +1,35 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+th#review_id, th#faq_id, th#wizard_id, th#company_logo {
+    width: 70px;
+}
+
+.wp-list-table #the-list {
+    th,td {
+        vertical-align: middle;
+        border-bottom: 1px solid #eaeaea;
+    }
+    tr {
+
+    }
+}
+
+
+.acf-block-component p {
+    margin-top: 0 !important;
+}
+
+
+.wp-admin .editor-styles-wrapper {
+    //font-family: $font-family-sans-serif;
+}
+
+.editor-post-title__block .editor-post-title__input {
+    //font-family: $font-headings;
+}
+
+.wp-admin .wp-block {
+    max-width: none;
+}
