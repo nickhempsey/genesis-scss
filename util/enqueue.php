@@ -22,6 +22,19 @@ wp_register_style(
     'https://use.typekit.net/bcj4ekv.css');
 
 
+// Animate On Scroll
+wp_register_script(
+	'bsg_aos_js',
+	'https://unpkg.com/aos@2.3.1/dist/aos.js',
+	array( 'jquery' ), '1.0.0', false );
+
+wp_register_style(
+	'bsg_aos_css',
+	'https://unpkg.com/aos@2.3.1/dist/aos.css',
+	array(), $version );
+
+
+	
 // Theme assets
 wp_register_style(
     'bsg_bootstrap_css',
@@ -54,7 +67,7 @@ function bsg_enqueue_css_js() {
 
     $post_type = get_post_type();
     $allow = array(
-        'post',
+        //'post',
         'page',
     );
     if(!is_admin() || (is_admin() && in_array($post_type, $allow)) ) {
@@ -74,17 +87,21 @@ function bsg_enqueue_css_js() {
 
     }
 
-
+    
     // Frontend Specific
     if(!is_admin()) {
 
 
-        // Bootstrap JS
-        wp_enqueue_script( 'bsg_popper_js');
-        wp_enqueue_script( 'bsg_bootstrap_js');
+		// Bootstrap JS
+		wp_enqueue_style( 'bsg_aos_js');
+		wp_enqueue_script( 'bsg_aos_css');
 
-        // Theme JS
-        wp_enqueue_script( 'bsg_combined_js');
+		// Bootstrap JS
+		wp_enqueue_script( 'bsg_popper_js');
+		wp_enqueue_script( 'bsg_bootstrap_js');
+
+		// Theme JS
+		wp_enqueue_script( 'bsg_combined_js');
 
 
     }

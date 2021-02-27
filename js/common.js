@@ -1,3 +1,5 @@
+AOS.init();
+
 jQuery(document).ready(function($) {
 
 	// Add loaded so we can pull the loading spinner.

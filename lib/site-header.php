@@ -7,8 +7,8 @@ add_action( 'genesis_before_header', 'genesis_do_subnav' );
 
 function bsg_site_header() {
 ?>
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
         <a class="navbar-brand" href="/">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
