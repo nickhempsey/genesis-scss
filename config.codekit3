@@ -17,22 +17,6 @@
       "oAP" : "\/alm_templates\/blog.php",
       "oF" : 0
     },
-    "\/cpt\/blog-archive.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/cpt\/blog-archive.php",
-      "oF" : 0
-    },
-    "\/cpt\/blog-single.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/cpt\/blog-single.php",
-      "oF" : 0
-    },
     "\/css\/admin.min.css" : {
       "aP" : 0,
       "bl" : 0,
@@ -2625,25 +2609,6 @@
       "oA" : 0,
       "oAP" : "\/LICENSE",
       "oF" : 0
-    },
-    "\/README.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/README.html",
-      "oF" : 1,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
     },
     "\/screenshot.png" : {
       "ft" : 32768,
